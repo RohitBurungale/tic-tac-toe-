@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #e2e8f0;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.25),
+              inset 0 0 20px rgba(255, 255, 255, 0.05);
+  font-size: 8vmin;
+  font-weight: bold;
+  color: #00ffd5; /* Neon Cyan */
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+
+.box:hover {
+  background: rgba(0, 255, 200, 0.15);
+  box-shadow: 0 0 30px rgba(0, 255, 200, 0.5);
+}
+
+#reset-btn,
+#new-btn {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00ffd5, #00aaff);
+  color: #0f172a;
+  font-weight: 600;
+  transition: 0.35s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.4);
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px rgba(0, 255, 200, 0.7);
+}
+
+#msg {
+  color: #00ffd5;
+  font-size: 5vmin;
+  font-weight: 700;
+  text-shadow: 0 0 20px rgba(0, 255, 200, 0.7);
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
+}
+.box:focus {
+  outline: none;
+  caret-color: transparent;
+}
+.box {
+  user-select: none;           /* text selection block */
+  -webkit-user-select: none;   /* Safari */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  outline: none;               /* remove outline */
+  caret-color: transparent;    /* remove typing cursor */
+}
+
+.box:focus {
+  outline: none !important;
+  caret-color: transparent;
+}
+
+.box:active {
+  outline: none;
+  caret-color: transparent;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent; /* remove mobile tap highlight */
+}
+.winner-box {
+  background-color: #00ffd5 !important;
+  color: #0f172a !important;
+  box-shadow: 0 0 35px #00ffd5 !important;
+  transform: scale(1.1);
+}
+
