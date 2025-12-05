@@ -1,1 +1,2 @@
-# tic-tac-toe-
+# tic-tac-toe
+## there game simple rule are there 
